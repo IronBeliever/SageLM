@@ -2,10 +2,12 @@
 <!-- SageLM: A Multi-aspect and Explainable Large Language Model for Speech Judgement -->
 <h4 align="center"> Yuan Ge, Junxiang Zhang, Xiaoqian Liu, Bei Li, Xiangnan Ma, Chenglong Wang, Kaiyang Ye, Yangfan Du, Linfeng Zhang, Yuxin Huang, Tong Xiao, Zhengtao Yu, Jingbo Zhu</h4>
 
+<p align="center">
+  📄 <a href="https://arxiv.org/abs/2508.20916">Paper</a> | 
+  🤗 <a href="https://huggingface.co/LGB666/SageLM">Model</a> | 
+  🤗 <a href="https://huggingface.co/LGB666/SageLM_testset_audio">Dataset</a>
+</p>
 
-
-<center> 📄 [Paper](https://arxiv.org/abs/2508.20916) |  🤗[Model ](https://huggingface.co/LGB666/SageLM) | 🤗[Dataset](https://huggingface.co/LGB666/SageLM_testset_audio)
-</center>
 ## News💡
 
 - [2025.08] We release our paper. If you have any questions about our project, please send email to geyuanqaq@gmail.com
