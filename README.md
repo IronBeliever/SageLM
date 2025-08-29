@@ -4,8 +4,8 @@
 
 
 
-​                                                           📄 [Paper](https://arxiv.org/abs/2508.20916) |  🤗[Model ](https://huggingface.co/LGB666/SageLM) | 🤗[Dataset](https://huggingface.co/LGB666/SageLM_testset_audio)
-
+<center> 📄 [Paper](https://arxiv.org/abs/2508.20916) |  🤗[Model ](https://huggingface.co/LGB666/SageLM) | 🤗[Dataset](https://huggingface.co/LGB666/SageLM_testset_audio)
+</center>
 ## News💡
 
 - [2025.08] We release our paper. If you have any questions about our project, please send email to geyuanqaq@gmail.com
