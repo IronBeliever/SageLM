@@ -5,8 +5,9 @@
 <p align="center">
   📄 <a href="https://arxiv.org/abs/2508.20916">Paper</a> | 
   🤗 <a href="https://huggingface.co/LGB666/SageLM">Model</a> | 
-  🤗 <a href="https://huggingface.co/LGB666/SageLM_testset_audio">Dataset</a>
+  🤗 <a href="https://huggingface.co/datasets/LGB666/SageLM_testset_audio">Dataset</a>
 </p>
+
 
 ## News💡
 
@@ -44,8 +45,6 @@ In order to use SageLM, you should first create a JSON file for your dataset in 
 }
 ```
 
-
-
 We use the following prompt template for SageLM training and inference:
 
 ```
@@ -63,8 +62,6 @@ Below are two responses for a given task. The task is defined by the Instruction
 ```
 
 where `{eval_dim}` represents the evaluation dimension , `{question}` represents the user query, and \<audio\> serves as a placeholder for audio responses.
-
-
 
 Next, register your dataset in `./LLaMA-Factory/data/dataset_info.json`. For example:
 
@@ -93,24 +90,31 @@ cd ./LLaMA-Factory
 bash ./LLaMA-Factory/scripts/my_infer/infer.sh
 ```
 
+Notice: SageLM currently supports only English and evaluated audio (audio 1 & audio 2) is truncated to 60 s.
+
+We currently only support batch inference with JSON datasets, but inference can also be performed using the [Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni) official code.
+
 
 
 ### Evaluation
 
-Given a user query and two response audios, SageLM produces outputs in the following format:
+We released our evaluation scripts to reproduce the main results in our paper.
+
+To evaluate the model's udging performance on **semantic** dimensions, run:
 
 ```
-{Comparision_result(1 | 2 | Tie)}
-{Rationale}
+bash ./LLaMA-Factory/scripts/eval.sh
 ```
 
-We used **Accuracy** and **Agreement** as quantitative metrics to evaluate the performance of SageLM.
+Note that each response pair in prediction and ground-truth files should be splited into four semantic dimensions, in the order of `helpfulness, honesty, instruction_following, truthfulness`. The data order should be consistent between the prediction and the ground-truth files.
 
-- **Accuracy:** the proportion of predictions that exactly match the ground-truth labels.
+To evaluate the model's judging performance on **acoustic** dimensions, run:
 
-- **Agreement:** assign a score of 1.0 when the prediction matches the ground-truth; if they differ, a score of 0.5 is assigned if either is *Tie*; and otherwise, 0.
+```
+bash ./LLaMA-Factory/scripts/eval_stage2.sh
+```
 
-We provide our evaluation scripts in `./LLaMA-Factory/scripts/my_infer` to reproduce the main results in our paper.
+The acoustic evaluation should be performed on one of the following dimensions: `emotion instruction following, gender instruction following, character instruction following, gender instruction following and emotion instruction following`. The data order should also be consistent between the prediction and the ground-truth.
 
 
 

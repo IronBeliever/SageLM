@@ -1,21 +1,13 @@
-'''
-    对比 模型推理的结果 与 真实答案
-'''
 import json
 import csv
 import fire
 
-# reference_path = "/obs/users/liuxiaoqian/Judge_SLM/LLaMA-Factory-0612/data/judge_dataset_compare_1_aspect_rationale-test_manual_checked.json"
-
-# prediction_path = "/obs/users/liuxiaoqian/Judge_SLM/LLaMA-Factory-0612/judge-eval/omni_7B_compare_1_aspect_rationale.jsonl"
 
 def evaluate(reference_path, prediction_path):
-    # 读取真实标签
     print(reference_path)
     with open(reference_path, 'r', encoding='utf-8') as f:
         ground_truth_data = json.load(f)
 
-    # 读取模型推理结果
     predict_data = []
     with open(prediction_path, 'r', encoding='utf-8') as f:
         for line in f:
