@@ -12,7 +12,8 @@
 ## News💡
 
 - [2025.08] We release our paper. If you have any questions about our project, please send email to geyuanqaq@gmail.com
-- Code, test dataset, and model will be released in a few days.
+- ~~Code, test dataset, and model will be released in a few days.~~
+- [2025.08.30] Code, test dataset, and model parameters have been publicly released.
 - The training dataset will be released after the paper is accepted.
 
 ## Quick Installation ⚙️
