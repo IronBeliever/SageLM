@@ -88,7 +88,7 @@ cd ./LLaMA-Factory
 bash ./LLaMA-Factory/scripts/my_infer/infer.sh
 ```
 
-Notice: SageLM currently supports only English and evaluated audio (audio 1 & audio 2) is truncated to 60 s.
+Notice: SageLM currently supports only **English** and evaluated audio (audio 1 & audio 2) is **truncated to 60 s**.
 
 We currently only support batch inference with JSON datasets, but inference can also be performed using the [Qwen2.5-Omni](https://github.com/QwenLM/Qwen2.5-Omni) official code.
 
