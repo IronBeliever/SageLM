@@ -25,8 +25,6 @@ pip install -e .
 ```
 
 
-
-
 ## Usage 🛠
 
 ### Data Preparation
@@ -129,5 +127,13 @@ cd ./LLaMA-Factory
 llamafactory-cli train examples/judge/qwen2.5_omni_7B_compare_1_aspect.yaml
 ```
 
-
-
+## Citation 
+If you find our paper useful, please consider citing:
+```bibtex
+@article{ge2025sagelm,
+  title={SageLM: A Multi-aspect and Explainable Large Language Model for Speech Judgement},
+  author={Ge, Yuan and Zhang, Junxiang and Liu, Xiaoqian and Li, Bei and Ma, Xiangnan and Wang, Chenglong and Ye, Kaiyang and Du, Yangfan and Zhang, Linfeng and Huang, Yuxin and others},
+  journal={arXiv preprint arXiv:2508.20916},
+  year={2025}
+}
+```
