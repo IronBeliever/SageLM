@@ -16,6 +16,8 @@
 - [2025.08.30] Code, test dataset, and model parameters have been publicly released.
 - The training dataset will be released after the paper is accepted.
 
+
+
 ## Quick Installation ⚙️
 
 ```
@@ -24,6 +26,7 @@ conda activate sagelm
 cd ./LLaMA-Factory
 pip install -e .
 ```
+
 
 
 ## Usage 🛠
@@ -44,6 +47,8 @@ In order to use SageLM, you should first create a JSON file for your dataset in 
 }
 ```
 
+
+
 We use the following prompt template for SageLM training and inference:
 
 ```
@@ -62,6 +67,8 @@ Below are two responses for a given task. The task is defined by the Instruction
 
 where `{eval_dim}` represents the evaluation dimension , `{question}` represents the user query, and \<audio\> serves as a placeholder for audio responses.
 
+
+
 Next, register your dataset in `./LLaMA-Factory/data/dataset_info.json`. For example:
 
 ```
@@ -75,10 +82,6 @@ Next, register your dataset in `./LLaMA-Factory/data/dataset_info.json`. For exa
     }
 }
 ```
-
-
-
-We have released our test dataset at https://huggingface.co/LGB666/SageLM_testset_audio. After downloading, please move and rename the directory to `./Audio` and follow the steps above to register datasets.
 
 
 
@@ -97,7 +100,11 @@ We currently only support batch inference with JSON datasets, but inference can 
 
 ### Evaluation
 
-We released our evaluation scripts to reproduce the main results in our paper.
+We have released our test dataset at https://huggingface.co/LGB666/SageLM_testset_audio. After downloading, please move and rename the directory to match the audio paths in the corresponding dataset JSON file.
+
+We also released our evaluation scripts to reproduce the main results in our paper.
+
+
 
 To evaluate the model's udging performance on **semantic** dimensions, run:
 
@@ -107,11 +114,15 @@ bash ./LLaMA-Factory/scripts/eval.sh
 
 Note that each response pair in prediction and ground-truth files should be splited into four semantic dimensions, in the order of `helpfulness, honesty, instruction_following, truthfulness`. The data order should be consistent between the prediction and the ground-truth files.
 
+
+
 To evaluate the model's judging performance on **acoustic** dimensions, run:
 
 ```
 bash ./LLaMA-Factory/scripts/eval_stage2.sh
 ```
+
+
 
 The acoustic evaluation should be performed on one of the following dimensions: `emotion instruction following, gender instruction following, character instruction following, gender instruction following and emotion instruction following`. The data order should also be consistent between the prediction and the ground-truth.
 
@@ -128,7 +139,10 @@ cd ./LLaMA-Factory
 llamafactory-cli train examples/judge/qwen2.5_omni_7B_compare_1_aspect.yaml
 ```
 
+
+
 ## Citation 
+
 If you find our paper useful, please consider citing:
 ```bibtex
 @article{ge2025sagelm,
