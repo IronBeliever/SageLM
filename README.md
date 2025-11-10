@@ -15,6 +15,7 @@
 - ~~Code, test dataset, and model will be released in a few days.~~
 - [2025.08.30] Code, test dataset, and model parameters have been publicly released.
 - The training dataset will be released after the paper is accepted.
+- [2025.11] SageLM is accepted by AAAI 2026 poster!🎉🎉🎉
 
 
 
