@@ -142,6 +142,95 @@ llamafactory-cli train examples/judge/qwen2.5_omni_7B_compare_1_aspect.yaml
 
 
 
+## 🔊 End-to-End Speech Evaluation vs. Cascade ASR → LLM: A Case Study
+
+Traditional cascade approaches first use **Whisper for ASR**, then pass the transcript to a text-based LLM for **response comparison**.
+However, ASR can introduce **cascaded errors**, which may lead GPT to **incorrectly favor one response over another**.
+
+SageLM is trained **end-to-end on audio** and does *not* rely on ASR transcripts, making it robust to **pronunciation variations, disfluencies, and unclear articulation**. Here we show several real cases to demonstrate these effects.
+
+Note that in these cases we focus solely on **semantic dimensions** (Helpfulness, Honesty, Truthfulness, Instruction Following). Thus, **disfluencies or unclear articulation in the audio should not affect the semantic comparison**.
+
+
+
+### Case 1
+
+**❓Question:**  
+
+> **Come up with healthy and easy dinner ideas for weeknights.**
+
+**🔊Response 1 (Qwen2.5-Omni)**  
+
+<audio controls>
+  <source src="./demo_audio/16/Qwen2.5-omni-Audio.wav" type="audio/wav">
+</audio>
+**🔊Response 2 (Kimi-Audio)**  
+
+<audio controls>
+  <source src="./demo_audio/16/Kimi-Audio.wav" type="audio/wav">
+</audio>
+📊 **Comparison Results (1 = Response 1 better, 2 = Response 2 better, T = Tie)**
+
+| **Method**                          | **Helpfulness** | **Honesty** | **Truthfulness** | **Instruction Following** |
+| ----------------------------------- | --------------- | ----------- | ---------------- | ------------------------- |
+| **GPT (Whisper-large-v3 + GPT-4o)** | **1**           | **1**       | **1**            | **1**                     |
+| **SageLM**                          | **2**           | **T**       | **2**            | **T**                     |
+| **Human Evaluation**                | **2**           | **T**       | **2**            | **T**                     |
+
+### Case 2
+
+**❓Question:**  
+
+> **For a quick and efficient office workout, suggest a short routine.**
+
+**🔊Response 1 (Qwen2.5-Omni)**  
+
+<audio controls>
+  <source src="./demo_audio/18/Qwen2.5-omni-Audio.wav" type="audio/wav">
+</audio>
+
+**🔊Response 2 (Kimi-Audio)**  
+
+<audio controls>
+  <source src="./demo_audio/18/Kimi-Audio.wav" type="audio/wav">
+</audio>
+
+📊 **Comparison Results**
+
+| **Method**           | **Helpfulness** | **Honesty** | **Truthfulness** | **Instruction Following** |
+| -------------------- | --------------- | ----------- | ---------------- | ------------------------- |
+| **GPT**              | **1**           | **1**       | **T**            | **1**                     |
+| **SageLM**           | **2**           | **2**       | **2**            | **T**                     |
+| **Human Evaluation** | **2**           | **T**       | **T**            | **T**                     |
+
+### Case 3
+
+**❓Question:**  
+
+> **How can I create a budget and stick to it for better financial health?**
+
+**🔊Response 1 (Qwen2.5-Omni)**  
+
+<audio controls>
+  <source src="./demo_audio/53/Qwen2.5-omni-Audio.wav" type="audio/wav">
+</audio>
+
+**🔊Response 2 (Kimi-Audio)**  
+
+<audio controls>
+  <source src="./demo_audio/53/Kimi-Audio.wav" type="audio/wav">
+</audio>
+
+📊 **Comparison Results**
+
+| **Method**           | **Helpfulness** | **Honesty** | **Truthfulness** | **Instruction Following** |
+| -------------------- | --------------- | ----------- | ---------------- | ------------------------- |
+| **GPT**              | **1**           | **T**       | **1**            | **1**                     |
+| **SageLM**           | **T**           | **T**       | **T**            | **T**                     |
+| **Human Evaluation** | **T**           | **T**       | **T**            | **T**                     |
+
+
+
 ## Citation 
 
 If you find our paper useful, please consider citing:
