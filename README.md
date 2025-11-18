@@ -167,7 +167,7 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 **🔊Response 2 (Kimi-Audio)**  
 
 <audio controls>
-  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/16/Kimi-Audio.wav/demo_audio/16/Kimi-Audio.wav" type="audio/wav">
+  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/16/Kimi-Audio.wav" type="audio/wav">
 </audio>
 
 📊 **Comparison Results (1 = Response 1 better, 2 = Response 2 better, T = Tie)**
