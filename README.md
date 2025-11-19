@@ -12,8 +12,7 @@
 ## News💡
 
 - [2025.08] We release our paper. If you have any questions about our project, please send email to geyuanqaq@gmail.com
-- ~~Code, test dataset, and model will be released in a few days.~~
-- [2025.08.30] Code, test dataset, and model parameters have been publicly released.
+- [2025.08] Code, test dataset, and model parameters have been publicly released.
 - The training dataset will be released after the paper is accepted.
 - [2025.11] SageLM is accepted by AAAI 2026 poster!🎉🎉🎉
 
@@ -164,6 +163,7 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 <audio controls>
   <source src="./demo_audio/16/Qwen2.5-omni-Audio.wav" type="audio/wav">
 </audio>
+
 **🔊Response 2 (Kimi-Audio)**  
 
 <audio controls>
