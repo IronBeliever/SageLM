@@ -167,7 +167,7 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 **🔊Response 2 (Kimi-Audio)**  
 
 <audio controls>
-  <source src="https://lgb666666661.github.io/SageLM-test/demo_audio/16/kimi-Audio.wav" type="audio/wav">
+  <source src="https://github.com/user-attachments/files/23764285/kimi-Audio.wav" type="audio/wav">
 </audio>
 
 
