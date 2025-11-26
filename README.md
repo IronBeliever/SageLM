@@ -158,19 +158,9 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 
 > **Come up with healthy and easy dinner ideas for weeknights.**
 
-**🔊Response 1 (Qwen2.5-Omni)**  
+🔊 [**Response 1 (Qwen2.5-Omni)**](./demo_audio/16/Qwen2.5-omni-Audio.wav)
 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/16/Qwen2.5-omni-Audio.wav" type="audio/wav">
-</audio>
-
-**🔊Response 2 (Kimi-Audio)**  
-
-<audio controls>
-  <source src="https://github.com/user-attachments/files/23764285/kimi-Audio.wav" type="audio/wav">
-</audio>
-
-https://github.com/user-attachments/files/23764285/kimi-Audio.wav
+🔊 [**Response 2 (Kimi-Audio)**](./demo_audio/16/kimi-Audio.wav)
 
 📊 **Comparison Results (1 = Response 1 better, 2 = Response 2 better, T = Tie)**
 
@@ -186,18 +176,9 @@ https://github.com/user-attachments/files/23764285/kimi-Audio.wav
 
 > **For a quick and efficient office workout, suggest a short routine.**
 
-**🔊Response 1 (Qwen2.5-Omni)**  
+🔊 [**Response 1 (Qwen2.5-Omni)**](.demo_audio/18/Qwen2.5-omni-Audio.wav)
 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/18/Qwen2.5-omni-Audio.wav" type="audio/wav">
-</audio>
-
-**🔊Response 2 (Kimi-Audio)**  
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/18/kimi-Audio.wav" type="audio/wav">
-</audio>
-
+🔊 [**Response 2 (Kimi-Audio)**](./demo_audio/18/kimi-Audio.wav)
 
 📊 **Comparison Results**
 
@@ -213,18 +194,9 @@ https://github.com/user-attachments/files/23764285/kimi-Audio.wav
 
 > **How can I create a budget and stick to it for better financial health?**
 
-**🔊Response 1 (Qwen2.5-Omni)**  
+🔊 [**Response 1 (Qwen2.5-Omni)**](./demo_audio/53/Qwen2.5-omni-Audio.wav)
 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/53/Qwen2.5-omni-Audio.wav" type="audio/wav">
-</audio>
-
-**🔊Response 2 (Kimi-Audio)**  
-
-<audio controls>
-  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/53/kimi-Audio.wav" type="audio/wav">
-</audio>
-
+🔊 [**Response 2 (Kimi-Audio)**](./demo_audio/53/kimi-Audio.wav)
 
 📊 **Comparison Results**
 
