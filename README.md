@@ -176,7 +176,7 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 
 > **For a quick and efficient office workout, suggest a short routine.**
 
-🔊 [**Response 1 (Qwen2.5-Omni)**](.demo_audio/18/Qwen2.5-omni-Audio.wav)
+🔊 [**Response 1 (Qwen2.5-Omni)**](./demo_audio/18/Qwen2.5-omni-Audio.wav)
 
 🔊 [**Response 2 (Kimi-Audio)**](./demo_audio/18/kimi-Audio.wav)
 
