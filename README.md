@@ -162,13 +162,15 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 **🔊Response 1 (Qwen2.5-Omni)**  
 
 <audio controls>
-  <source src="./demo_audio/16/Qwen2.5-omni-Audio.wav" type="audio/wav">
+  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/16/Qwen2.5-omni-Audio.wav" type="audio/wav">
 </audio>
+
 **🔊Response 2 (Kimi-Audio)**  
 
 <audio controls>
-  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/16/Kimi-Audio.wav" type="audio/wav">
+  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/16/kimi-Audio.wav" type="audio/wav">
 </audio>
+
 
 📊 **Comparison Results (1 = Response 1 better, 2 = Response 2 better, T = Tie)**
 
@@ -187,14 +189,15 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 **🔊Response 1 (Qwen2.5-Omni)**  
 
 <audio controls>
-  <source src="./demo_audio/18/Qwen2.5-omni-Audio.wav" type="audio/wav">
+  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/18/Qwen2.5-omni-Audio.wav" type="audio/wav">
 </audio>
 
 **🔊Response 2 (Kimi-Audio)**  
 
 <audio controls>
-  <source src="./demo_audio/18/Kimi-Audio.wav" type="audio/wav">
+  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/18/kimi-Audio.wav" type="audio/wav">
 </audio>
+
 
 📊 **Comparison Results**
 
@@ -213,14 +216,15 @@ Note that in these cases we focus solely on **semantic dimensions** (Helpfulness
 **🔊Response 1 (Qwen2.5-Omni)**  
 
 <audio controls>
-  <source src="./demo_audio/53/Qwen2.5-omni-Audio.wav" type="audio/wav">
+  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/53/Qwen2.5-omni-Audio.wav" type="audio/wav">
 </audio>
 
 **🔊Response 2 (Kimi-Audio)**  
 
 <audio controls>
-  <source src="./demo_audio/53/Kimi-Audio.wav" type="audio/wav">
+  <source src="https://raw.githubusercontent.com/IronBeliever/SageLM/main/demo_audio/53/kimi-Audio.wav" type="audio/wav">
 </audio>
+
 
 📊 **Comparison Results**
 
