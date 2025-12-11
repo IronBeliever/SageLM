@@ -129,7 +129,7 @@ The acoustic evaluation should be performed on one of the following dimensions: 
 
 
 
-## Training of SageLM Model 📜
+## 📜 Training of SageLM Model
 
 We trained our model using [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). 
 
