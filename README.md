@@ -5,16 +5,17 @@
 <p align="center">
   📄 <a href="https://arxiv.org/abs/2508.20916">Paper</a> | 
   🤗 <a href="https://huggingface.co/LGB666/SageLM">Model</a> | 
-  🤗 <a href="https://huggingface.co/datasets/LGB666/SageLM_testset_audio">Dataset</a>
+  🤗 <a href="https://huggingface.co/datasets/LGB666/SpeechFeedBack">Dataset</a>
 </p>
+
 
 
 ## News💡
 
 - [2025.08] We release our paper. If you have any questions about our project, please send email to geyuanqaq@gmail.com
 - [2025.08] Code, test dataset, and model parameters have been publicly released.
-- The training dataset will be released after the paper is accepted.
 - [2025.11] SageLM is accepted by AAAI 2026 poster!🎉🎉🎉
+- [2025.12] We release our Stage 1 training dataset.
 
 
 
