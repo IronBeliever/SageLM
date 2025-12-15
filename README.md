@@ -15,7 +15,7 @@
 - [2025.08] We release our paper. If you have any questions about our project, please send email to geyuanqaq@gmail.com
 - [2025.08] Code, test dataset, and model parameters have been publicly released.
 - [2025.11] SageLM is accepted by AAAI 2026 poster!🎉🎉🎉
-- [2025.12] We release our Stage 1 training dataset.
+- [2025.12] We release our training dataset.
 
 
 
@@ -139,6 +139,8 @@ To train your own model, you need to register your dataset in `./LLaMA-Factory/d
 cd ./LLaMA-Factory
 llamafactory-cli train examples/judge/qwen2.5_omni_7B_compare_1_aspect.yaml
 ```
+
+We release the [training dataset](https://huggingface.co/datasets/LGB666/SpeechFeedBack) to facilitate the reproduction of our results.
 
 
 
